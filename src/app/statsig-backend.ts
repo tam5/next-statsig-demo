@@ -4,6 +4,7 @@ import Statsig, { StatsigUser } from "statsig-node";
 
 const isStatsigReady = Statsig.initialize(process.env.STATSIG_SERVER_KEY!, {
     environment: { tier: "development" },
+    logger: { ...console, logLevel: "debug" },
 });
 
 export async function generateBootstrapValues(): Promise<{

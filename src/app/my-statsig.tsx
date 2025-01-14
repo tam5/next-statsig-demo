@@ -9,7 +9,7 @@ import {
   useClientBootstrapInit, // <- Add this
 } from "@statsig/react-bindings";
 import { StatsigAutoCapturePlugin } from "@statsig/web-analytics";
-import React, { useEffect } from "react";
+import React from "react";
 
 export default function MyStatsig({
   children,

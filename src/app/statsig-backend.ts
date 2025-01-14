@@ -14,6 +14,7 @@ export async function generateBootstrapValues(): Promise<{
     await isStatsigReady;
 
     const user = { userID: "a-user" };
+
     const key = process.env.NEXT_PUBLIC_STATSIG_CLIENT_KEY!;
 
     const values = Statsig.getClientInitializeResponse(user, key, {

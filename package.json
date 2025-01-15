@@ -9,8 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@opentelemetry/api-logs": "^0.57.1",
+    "@opentelemetry/instrumentation": "^0.57.1",
+    "@opentelemetry/sdk-logs": "^0.57.1",
     "@statsig/react-bindings": "^3.9.1",
     "@statsig/web-analytics": "^3.9.1",
+    "@vercel/otel": "^1.10.0",
     "next": "15.1.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
